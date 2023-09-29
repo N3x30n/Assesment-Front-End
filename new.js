@@ -1,15 +1,15 @@
 const randomRest = [
     {
         link: "https://smashburger.com",
-        name: "SmashBurger"
+        name: "SmashBurger",
     },
     {
         link: "https://www.apolloburger.com",
-        name: "Apollo Burger"
+        name: "Apollo Burger",
     },
     {
         link: "https://www.meltyway.com/index.html",
-        name: "Melty Way"
+        name: "Melty Way",
     },
     {
         link: "http://sabaideethaicuisine.com",
@@ -33,8 +33,8 @@ const randomRest = [
     },
     {
         link: "https://www.tsunamiutah.com",
-        name: "Tsunami Sushi Bar",
-    }]
+        name: "Tsunami Sushi Bar",}
+]
 
     let ran;
 function randomButton (array){
@@ -45,8 +45,10 @@ function randomButton (array){
 document.getElementById('random').addEventListener('click', () =>{
 	let restaurant = randomButton(randomRest).link
     let name = randomButton(randomRest).name
+
 	console.log(restaurant)
     console.log(name)
 	document.getElementById('test').setAttribute('href', restaurant)
     document.getElementById('test').textContent = name
+
 })
